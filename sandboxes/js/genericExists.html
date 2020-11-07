@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Generic Exists</title>
+</head>
+
+<body>
+    <div>
+        <h3>Data</h3>
+        <div id="list">
+
+        </div>
+
+        <h3>Tests</h3>
+        <div id="testResult">
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        // generic exists function:
+        // list: array of objects
+        // property: property to search on
+        // valueToMatch: value to match on the property
+        var exists = function(list, property, valueToMatch) {
+            for(var i in list) {
+                if(list[i].hasOwnProperty(property))
+                    if(list[i][property] === valueToMatch)
+                        return true;
+            }
+            return false;
+        };
+
+        var test = function() {
+            var list1 = [];
+            list1.push({"id": 1, "name": "test1", "value": "This is a test"});
+            list1.push({"id": 2, "name": "test2", "value": 0});
+            list1.push({"id": 3, "name": "test3", "value": true});
+            list1.push({"id": 4, "name": "test4", "value": 0.99});
+
+            var listText = "<ul>";
+            for(var i in list1) {
+                listText += "<li>id: " + list1[i].id + " name: " + list1[i].name + " value: " + list1[i].value + "</li>";
+            }
+            listText += "</ul>";
+            document.getElementById("list").innerHTML = listText;
+
+            var testText = "<ul>";
+            testText += "<li>value : This is a test exists?&nbsp;";
+            testText += "<b>" + exists(list1, "value", "This is a test") + "</b></li>";
+            testText += "<li>value : 0 exists?&nbsp;";
+            testText += "<b>" + exists(list1, "value", 0) + "</b></li>";
+            testText += "<li>value : true exists?&nbsp;";
+            testText += "<b>" + exists(list1, "value", true) + "</b></li>";
+            testText += "<li>value : 0.99 exists?&nbsp;";
+            testText += "<b>" + exists(list1, "value", 0.99) + "</b></li>";
+            testText += "<li>value : false exists?&nbsp;";
+            testText += "<b>" + exists(list1, "value", false) + "</b></li></ul>";
+            document.getElementById("testResult").innerHTML = testText;
+        };
+
+        test();
+    </script>
+</body>
+
+</html>
