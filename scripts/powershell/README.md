@@ -1,7 +1,7 @@
-# powerShellScripts
-
+# Powershell
 Miscellaneous PowerShell scripts to help with productivity
 
+## Scripts
 | Name                           | Description                                                    |
 |--------------------------------|----------------------------------------------------------------|
 | isAdministrator.ps1            | Checks to see if current session is run as administrator. |

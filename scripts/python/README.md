@@ -1,10 +1,7 @@
-Python Scripts
-==============
-
+# Python Scripts
 Collection of python scripts. Python versions will be marked in the scripts table.
 
-Scripts
--------
+## Scripts
 | Name	        | Ver | Description	| Dependencies |
 |:------------- |:--- |:----------- |:------------ |
 | stack.py      | 3.6.1 | Basic implementation of a stack | none |
@@ -17,11 +14,9 @@ Scripts
 | reverse.py | 2.7 | Reverses the input string | none |
 | censor.py | 2.7 | Takes a string and a censored word/phrase, returns new string with \*'s in place of censored | none |
 
-Todo
------
+## Todo
 - [ ] convert 2.7 scripts to 3.6.1
 
-Issues
-------
+## Issues
 - [ ] 05/17/18 - intExpander.py doesn't handle negative numbers. See TODO in script
 - [X] ~~05/17/18 - intExpander.py need to reverse array before returning it~~
