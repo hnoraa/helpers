@@ -13,6 +13,7 @@ Collection of python scripts. Python versions will be marked in the scripts tabl
 | prime.py | 2.7 | Determines if an integer is prime | none |
 | reverse.py | 2.7 | Reverses the input string | none |
 | censor.py | 2.7 | Takes a string and a censored word/phrase, returns new string with \*'s in place of censored | none |
+| ten.py | 3.7.4 | Shows 10 ways to refactor python code as seen in [https://hackernoon.com/10-ways-to-refactor-your-python-code-ry1033xn] | none |
 
 ## Todo
 - [ ] convert 2.7 scripts to 3.6.1
