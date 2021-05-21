@@ -1,5 +1,8 @@
 Function ServiceExists {
-    Param([string]$serviceName)
+    Param(
+        # the service name
+        [string]$serviceName
+    )
 
     If (Get-Service $serviceName -ErrorAction SilentlyContinue) {
         If ((Get-Service $serviceName).Status -eq 'Running') {
