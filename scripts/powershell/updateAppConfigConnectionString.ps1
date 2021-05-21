@@ -1,12 +1,11 @@
 Function UpdateConnectionString {
     Param(
-        # the config file
+        # the app.config file
         [string]$config, 
         
         # the new connection string
         [string]$connectionString
     )
-    
     Write-Host "Updating $config sql connection string..."
     
     # load
