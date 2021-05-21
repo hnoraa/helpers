@@ -1,6 +1,14 @@
 Function UpdateAppSetting {
-    Param([string]$config, [string]$name, [string]$value)
-    
+    Param(
+        # the app.config file
+        [string]$config, 
+        
+        # the app setting to change
+        [string]$name, 
+        
+        # the new value
+        [string]$value
+    )
     Write-Host "Updating $config setting $name to $value..."
     
     # load
