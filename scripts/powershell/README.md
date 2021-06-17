@@ -22,3 +22,4 @@ Miscellaneous PowerShell scripts to help with productivity
 | updateAppConfigConnectionString.ps1 | Updates a connection string in an App.config file (from a .net project).                                    |
 | updateAppConfigSettings.ps1         | Updates an app setting in an App.config file (from a .net project).                                         |
 | serviceExists.ps1                   | Checks if a Windows service exists, stops it if it does.                                                    |
+| ||
