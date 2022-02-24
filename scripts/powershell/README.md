@@ -24,3 +24,4 @@ Miscellaneous PowerShell scripts to help with productivity
 | serviceExists.ps1                   | Checks if a Windows service exists, stops it if it does.                                                    |
 | waitForStop.ps1                     | Various methods that can be used to wait for a service to stop before progressing.                          |
 | status.ps1                          | Loop through my github projects (locally) and get the git status results.                                   |
+| sendEmail.ps1                       | Send an email.                                                                                              |
