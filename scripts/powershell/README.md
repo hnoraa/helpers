@@ -26,3 +26,5 @@ Miscellaneous PowerShell scripts to help with productivity
 | status.ps1                          | Loop through my github projects (locally) and get the git status results.                                   |
 | sendEmail.ps1                       | Send an email via smtp server.                                                                              |
 | replaceValuesInFiles.ps1            | Replace a given string in a list of files (within the current directory).                                   |
+| append.ps1                          | Appends text to a file.                                                                                     |
+| overwrite.ps1                       | Overwrites specific text in file.                                                                           |
