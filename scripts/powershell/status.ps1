@@ -1,14 +1,16 @@
-$cwd = Get-Location
+$cwd = Get-Location # set this to your code location
 $report = "$($cwd)\report.txt"
 
 Set-Content $report "Git Status Report: $(Get-Date)"
 Add-Content $report "**********************************************"
 
 Get-ChildItem -Path $cwd -Directory | ForEach-Object {
-    Write-Host "Running git status on: $($_)"
-    Add-Content $report "$($_) Git Status:"
-    git -C $_ status | Add-Content $report
-    Add-Content $report "**********************************************"
+    Write-Host "Running git status on: $($cwd)\$($_)"
+    If(Test-Path -Path "$($cwd)\$($_)\.gitignore" -PathType Leaf) {
+        Add-Content $report "$($cwd)\$($_) Git Status:"
+        git -C $cwd\$_ status | Add-Content $report
+        Add-Content $report "**********************************************"
+    }
 }
 
 ###### example report
